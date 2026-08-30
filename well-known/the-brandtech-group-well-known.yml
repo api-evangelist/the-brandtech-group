@@ -1,0 +1,94 @@
+generated: '2026-08-30'
+method: probed
+source: live GET probes of /.well-known/* on every Brandtech Group brand host
+note: >-
+  Every path returned 404 or an SPA catch-all. No /.well-known document is
+  served anywhere in the group, so NO WellKnown or SecurityTxt pointer is wired
+  into apis.yml — this file records a measured absence, not a presence.
+  app.trypencil.com answers 200 with the same 3,480-byte React shell for every
+  path probed (including /openapi.json and /graphql), which is a catch-all, not
+  a document; those rows are recorded as misses.
+hosts:
+- host: thebrandtechgroup.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+- host: trypencil.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.trypencil.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: SPA catch-all — 3,480-byte text/html React shell, not a document. Treated as a miss.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: SPA catch-all — identical HTML shell. Treated as a miss.
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: SPA catch-all — identical HTML shell. Treated as a miss.
+- host: api.acorn-i.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+    note: 'AWS API Gateway: {"message":"Missing Authentication Token"} on every path.'
+- host: www.jellyfish.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: www.oliver.agency
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: acorn-i.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: www.fifty-five.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: www.mobkoi.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: collectivelyinc.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: www.dp6.com.br
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null

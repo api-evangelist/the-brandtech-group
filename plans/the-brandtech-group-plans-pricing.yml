@@ -1,0 +1,97 @@
+generated: '2026-08-30'
+method: searched
+source: https://trypencil.com/pricing
+note: >-
+  The Brandtech Group publishes no pricing for the group itself — Oliver,
+  Jellyfish, fifty-five, DP6, Collectively, Mobkoi and Acorn-i are all sold as
+  services through a contact/sales motion with no published rate card. The only
+  published, self-serve price list in the group belongs to Pencil, the
+  generative-AI creative platform The Brandtech Group acquired in June 2023 and
+  operates as a wholly owned brand; the plan facts below are taken from Pencil's
+  pricing page and are corroborated verbatim by the Pencil llms.txt.
+corroborating_source: https://trypencil.com/llms.txt
+product: Pencil
+currency: USD
+billing_periods:
+- monthly
+- annual
+metering_unit: generation
+metering_definition: >-
+  A generation is each interaction with an AI model to produce an output.
+  Monthly allocations do not roll over.
+plan_count: 3
+plans:
+- name: Core
+  price: 14
+  price_annual_per_month: 11
+  currency: USD
+  billing_period: monthly
+  self_serve: true
+  included_quota:
+    generations_per_month: 50
+    workspaces: 1
+  overage: null
+  overage_note: Not published; monthly allocations do not roll over.
+  limits:
+  - 50 generations per month
+  - 1 workspace
+  features:
+  - Self-serve AI agents for text, image, video and ad creatives
+  - Realtime AI insights
+  - Chat support
+- name: Growth
+  price: 55
+  price_annual_per_month: 44
+  currency: USD
+  billing_period: monthly
+  self_serve: true
+  included_quota:
+    generations_per_month: 250
+    workspaces: unlimited
+  overage: null
+  overage_note: Not published; monthly allocations do not roll over.
+  limits:
+  - 250 generations per month
+  features:
+  - Everything in Core at a lower per-unit cost
+  - Unlimited workspaces
+  - Chat support with direct product-team access
+- name: Pro
+  price: null
+  price_model: custom
+  currency: USD
+  billing_period: contract
+  self_serve: false
+  contact_url: https://trypencil.com/contact
+  enterprise_url: https://trypencil.com/for-enterprise
+  included_quota:
+    generations_per_month: unlimited
+    users: unlimited
+    brands: unlimited
+    markets: unlimited
+  overage: committed consumption pricing
+  limits: []
+  features:
+  - Unlimited generations
+  - Dedicated customer success
+  - Committed consumption pricing
+  - Entity and role access controls
+  - IP assignment
+  - No-train clause
+  - Data ringfencing
+  - AI governance controls
+api_access:
+  published: false
+  note: >-
+    No plan tier advertises API access, API keys, developer seats or a
+    programmatic quota. Pencil's published integration surface is inbound
+    connectors (Meta, TikTok, YouTube, Google Display, DV360, LinkedIn, Figma,
+    Adobe Workfront/AEM, Bynder, Orange Logic, Monotype) rather than an outbound
+    API a customer can call.
+evidence:
+- url: https://trypencil.com/pricing
+  status: 200
+- url: https://trypencil.com/llms.txt
+  status: 200
+- url: https://trypencil.com/for-enterprise
+  status: 200

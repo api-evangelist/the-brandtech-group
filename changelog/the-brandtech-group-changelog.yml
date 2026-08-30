@@ -1,0 +1,40 @@
+generated: '2026-08-30'
+method: searched
+source: https://trypencil.com/resources/release-notes
+note: >-
+  The Brandtech Group publishes no changelog for the group. Pencil, the wholly
+  owned generative-AI platform brand, publishes a Release Notes page which
+  returns HTTP 200 but renders its entries client-side — the served HTML
+  contains only a heading and a "Loading..." placeholder, so no dated entry
+  could be read anonymously. The page is recorded as present and unreadable
+  rather than absent.
+scheme: none-published
+versioning: >-
+  No version numbers are published for the Pencil platform. Plans and features
+  are described without a release version, and no API version exists because no
+  API is published.
+current_version: null
+changelog_url: https://trypencil.com/resources/release-notes
+machine_readable: false
+feed: null
+entries: []
+entries_readable: false
+entries_unreadable_reason: js-rendered
+group_news:
+  note: >-
+    Group-level announcements are published as posts on thebrandtechgroup.com
+    (for example the June 2023 Pencil acquisition announcement) but there is no
+    /news/ or /blog/ index — those paths 404 — so there is no dated feed to
+    structure.
+  probed:
+  - url: https://thebrandtechgroup.com/news/
+    status: 404
+  - url: https://thebrandtechgroup.com/blog/
+    status: 404
+  - url: https://thebrandtechgroup.com/insights/
+    status: 404
+evidence:
+- url: https://trypencil.com/resources/release-notes
+  status: 200
+- url: https://trypencil.com/blog
+  status: 200

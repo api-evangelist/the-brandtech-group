@@ -1,0 +1,75 @@
+generated: '2026-08-30'
+method: searched
+source: https://status.trypencil.com/, https://trypencil.com/resources/release-notes, https://trypencil.com/legals/pencil-pro-terms-and-conditions
+note: >-
+  There is no group-level lifecycle surface. Pencil — the generative-AI platform
+  The Brandtech Group acquired outright in June 2023 and runs as a wholly owned
+  brand — is the only part of the group operating a status page, so the
+  trypencil.com domain is expected here.
+status_page:
+  present: true
+  url: https://status.trypencil.com/
+  platform: Atlassian Statuspage
+  page_id: zlkc0crhdnv5
+  http_status: 200
+  machine_readable: true
+  endpoints:
+  - url: https://status.trypencil.com/api/v2/status.json
+    status: 200
+    note: Overall indicator + description.
+  - url: https://status.trypencil.com/api/v2/summary.json
+    status: 200
+    note: Components, incidents and scheduled maintenance.
+  - url: https://status.trypencil.com/api/v2/components.json
+  - url: https://status.trypencil.com/api/v2/incidents.json
+  provenance: >-
+    The status API is Atlassian's standard Statuspage v2 contract, served on a
+    host The Brandtech Group controls. It is not a contract the group authored,
+    so it is recorded here rather than registered as one of the group's APIs.
+  components_observed:
+  - pro.trypencil.com
+  - cn.trypencil.com
+  - app.trypencil.com
+  - Google Cloud Platform (Console, Networking, Compute Engine, GKE, Cloud Storage, Cloud SQL, Spanner, BigQuery, Bigtable, Pub/Sub)
+  - Cloudflare R2
+  - Chargebee API (EU)
+  observed_at: '2026-08-30'
+  observed_state: All Systems Operational (indicator none, 0 open incidents)
+versioning:
+  policy_published: false
+  scheme: null
+  note: No API exists to version; no product version numbers are published.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  note: >-
+    No deprecation policy, Sunset/Deprecation header commitment (RFC 8594) or
+    end-of-life schedule is published anywhere in the group.
+sla:
+  published: false
+  note: >-
+    No public uptime SLA. The Pencil Pro terms and conditions
+    (https://trypencil.com/legals/pencil-pro-terms-and-conditions) govern the
+    enterprise relationship; any service-level commitment is contractual and not
+    published anonymously.
+support:
+  channels:
+  - type: help-center
+    url: https://help.trypencil.com/en/
+  - type: chat
+    note: Chat support included on Core and Growth; direct product-team access on Growth.
+  - type: dedicated-csm
+    note: Pro plan only.
+  - type: contact-form
+    url: https://trypencil.com/contact
+deprecated_operations: []
+evidence:
+- url: https://status.trypencil.com/api/v2/status.json
+  status: 200
+- url: https://status.trypencil.com/api/v2/summary.json
+  status: 200
+- url: https://status.thebrandtechgroup.com/
+  status: '<no response>'
+- url: https://trypencil.com/legals/pencil-pro-terms-and-conditions
+  status: 200

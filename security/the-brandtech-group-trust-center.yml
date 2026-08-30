@@ -1,0 +1,63 @@
+generated: '2026-08-30'
+method: searched
+source: https://trust.trypencil.com/
+note: >-
+  The Brandtech Group publishes no trust center on its own corporate domain
+  (trust.thebrandtechgroup.com does not resolve). The group's only public trust
+  surface belongs to Pencil, the generative-AI creative platform The Brandtech
+  Group acquired outright in June 2023 and operates as a wholly owned brand, so
+  the different domain is expected and is recorded here on that basis.
+trust_centers:
+- name: Pencil Trust Center
+  url: https://trust.trypencil.com/
+  operator: Pencil (The Brandtech Group)
+  platform: Vanta
+  http_status: 200
+  content_type: text/html
+  machine_readable: false
+  rendering: >-
+    Client-side rendered Vanta trust-center application (assets.vanta.com,
+    app.eu.vanta.com document store). The certification list, subprocessor list
+    and document requests are fetched by JavaScript after load, so the control
+    inventory is not readable from the served HTML.
+  faq_url: https://trust.trypencil.com/faq
+certifications:
+- name: SOC 2 Type II
+  status: certified
+  scope: Pencil platform
+  evidence: https://trypencil.com/llms.txt
+  evidence_quote: 'Pencil is SOC 2 Type II certified.'
+  report_access: gated
+  note: >-
+    The report itself is behind the Vanta trust-center document request flow;
+    no public attestation letter or audit summary is served anonymously.
+commitments:
+- name: IP indemnification
+  scope: Enterprise (Pro) customers
+  evidence: https://trypencil.com/llms.txt
+- name: No-train policy
+  detail: Customer data is never used to train models.
+  scope: Enterprise (Pro) customers
+  evidence: https://trypencil.com/llms.txt
+- name: Regional data compliance
+  detail: EU, US and APAC data regions.
+  evidence: https://trypencil.com/llms.txt
+- name: Role-based access controls
+  evidence: https://trypencil.com/llms.txt
+- name: Data ringfencing and AI governance controls
+  scope: Pro plan
+  evidence: https://trypencil.com/pricing
+gaps:
+- No public security.txt on thebrandtechgroup.com or trypencil.com (both 404).
+- No named security contact or vulnerability-disclosure policy found.
+- No bug bounty program found on HackerOne, Bugcrowd or Intigriti.
+- Certification inventory is JavaScript-rendered, so no machine-readable evidence file exists.
+evidence:
+- url: https://trust.trypencil.com/
+  status: 200
+- url: https://trust.trypencil.com/faq
+  status: 200
+- url: https://trypencil.com/.well-known/security.txt
+  status: 404
+- url: https://thebrandtechgroup.com/.well-known/security.txt
+  status: 404

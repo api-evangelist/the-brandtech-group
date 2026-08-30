@@ -1,0 +1,44 @@
+generated: '2026-08-30'
+method: searched
+source: https://trypencil.com/pricing, https://trypencil.com/llms.txt, https://help.trypencil.com/en/
+note: >-
+  The Brandtech Group publishes no API, so there are no request rate limits,
+  no rate-limit response headers and no documented 429 behaviour to record.
+  What Pencil does publish is a per-plan CONSUMPTION quota measured in
+  "generations" — a commercial allowance, not a runtime throttle — so it is
+  captured in plans/the-brandtech-group-plans-pricing.yml and cross-referenced
+  below rather than being counted as a rate limit.
+limit_count: 0
+rate_limits: []
+headers:
+  request_id: null
+  ratelimit_limit: null
+  ratelimit_remaining: null
+  ratelimit_reset: null
+  retry_after: null
+  observed: false
+  note: No callable public endpoint exists on which to observe headers.
+exhaustion_status_code: null
+consumption_quotas:
+- plan: Core
+  unit: generation
+  allowance: 50 per month
+  rollover: false
+- plan: Growth
+  unit: generation
+  allowance: 250 per month
+  rollover: false
+- plan: Pro
+  unit: generation
+  allowance: unlimited
+  rollover: null
+  note: Committed consumption pricing.
+quota_definition: >-
+  "A generation is each interaction with an AI model to produce an output.
+  Monthly allocations do not roll over." — https://trypencil.com/llms.txt
+cross_reference: plans/the-brandtech-group-plans-pricing.yml
+evidence:
+- url: https://trypencil.com/pricing
+  status: 200
+- url: https://trypencil.com/llms.txt
+  status: 200

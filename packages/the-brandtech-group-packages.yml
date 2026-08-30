@@ -1,0 +1,91 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  registry.npmjs.org, pypi.org, rubygems.org, crates.io, api.github.com org
+  listings for thebrandtechgroup / pencil-ai / fifty-five / DP6, plus
+  trypencil.com and thebrandtechgroup.com
+note: >-
+  No first-party client library, SDK or CLI is published by The Brandtech Group
+  or any of its brands. No SDKs pointer is wired into apis.yml — there is no SDK
+  to point at. The group's GitHub org holds two forks (a countries/states/cities
+  dataset and a Mixpanel proxy config), neither of which is a client for a
+  Brandtech API. The open-source work under github.com/DP6 and
+  github.com/fifty-five is marketing-analytics tooling for Google and Meta
+  platforms, not clients for any Brandtech Group API, so it is listed as
+  related-but-not-official rather than as SDKs.
+package_count: 0
+official_sdk_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  queries: ['@trypencil/sdk', trypencil, pencil-api, '@pencil/sdk']
+  result: not found
+- registry: pypi
+  queries: [trypencil, pencil-ai]
+  result: not found
+- registry: rubygems
+  queries: [trypencil]
+  result: not found
+- registry: crates.io
+  queries: [trypencil]
+  result: not found
+- registry: maven-central
+  queries: [brandtech, trypencil]
+  result: not found
+- registry: nuget
+  queries: [trypencil]
+  result: not found
+- registry: pkg.go.dev
+  queries: [trypencil]
+  result: not found
+github_orgs:
+- org: thebrandtechgroup
+  url: https://github.com/thebrandtechgroup
+  official: true
+  public_repos: 2
+  repos:
+  - name: countries-states-cities-database
+    version: null
+    published: null
+    note: Fork of a third-party open dataset; last pushed 2023-08-13. Not an SDK.
+  - name: mixpanel-proxy
+    version: null
+    published: null
+    note: Fork of Mixpanel's proxy configuration; last pushed 2023-01-04. Not an SDK.
+- org: DP6
+  url: https://github.com/DP6
+  official: true
+  official_sdk: false
+  public_repos: 64
+  note: >-
+    Active open-source org of DP6, the Brazilian data-science company in the
+    group. Publishes marketing-analytics tooling (Marketing-Attribution-Models,
+    marketing-data-sync, analytics-helper, penguin-datalayer-collect) that
+    integrates with Google and Meta APIs. None of it is a client for a Brandtech
+    Group API, so none is counted as a first-party SDK.
+- org: fifty-five
+  url: https://github.com/fifty-five
+  official: true
+  official_sdk: false
+  public_repos: 3
+  note: Three small tracking/training repos; no SDK.
+- org: pencil-ai
+  url: https://github.com/pencil-ai
+  official: unverified
+  public_repos: 0
+  note: >-
+    Empty org created 2023-10-17 with no name, blog or email set. Ownership by
+    The Brandtech Group could not be established, and it publishes nothing, so
+    nothing is attributed to it.
+cdn_distributions: []
+evidence:
+- url: https://api.github.com/orgs/thebrandtechgroup
+  status: 200
+- url: https://registry.npmjs.org/trypencil
+  status: 404
+- url: https://pypi.org/pypi/trypencil/json
+  status: 404
+- url: https://rubygems.org/api/v1/gems/trypencil.json
+  status: 404
+- url: https://crates.io/api/v1/crates/trypencil
+  status: 404

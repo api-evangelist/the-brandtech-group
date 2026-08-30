@@ -1,0 +1,80 @@
+generated: '2026-08-30'
+method: searched
+source: https://trust.trypencil.com/, https://trypencil.com/llms.txt, https://trypencil.com/legals/pencil-pro-terms-and-conditions
+note: >-
+  The Brandtech Group publishes no machine-readable contract, so every
+  contract-derived conformance assertion below is recorded as false with the
+  probe that established it. The compliance claims that ARE published belong to
+  Pencil, the wholly owned generative-AI platform brand, and are carried on its
+  Vanta trust center and llms.txt.
+standards:
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI or Swagger document served on any group host. Probed
+    trypencil.com/openapi.json (404 HTML), app.trypencil.com/openapi.json,
+    /api/openapi.json, /swagger.json, /api-docs (all 200 SPA shell),
+    api.acorn-i.com/openapi.json (403 Missing Authentication Token),
+    jellyfish.com, oliver.agency, acorn-i.com, fifty-five.com, mobkoi.com,
+    collectivelyinc.com, dp6.com.br (all 404).
+- id: graphql
+  conforms: false
+  evidence: app.trypencil.com/graphql returns the SPA HTML shell; no introspection surface found.
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming or webhook specification published.
+- id: mcp
+  conforms: false
+  evidence: No MCP server published; see mcp/the-brandtech-group-mcp.yml.
+- id: a2a
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json 404 on every group host.
+- id: llms-txt
+  conforms: true
+  evidence: https://trypencil.com/llms.txt returns 200 text/plain, 3,373 bytes, valid llms.txt structure.
+- id: oauth2
+  conforms: false
+  evidence: No OAuth authorization server metadata served; no public OAuth documentation.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404 on trypencil.com and thebrandtechgroup.com.
+- id: rfc9457
+  conforms: false
+  evidence: No published error catalog or problem+json surface.
+- id: rfc9116
+  conforms: false
+  evidence: /.well-known/security.txt 404 on thebrandtechgroup.com and trypencil.com.
+- id: soc2
+  conforms: true
+  evidence: >-
+    "Pencil is SOC 2 Type II certified" — https://trypencil.com/llms.txt,
+    corroborated by the Vanta-hosted trust center at https://trust.trypencil.com/.
+    The attestation report itself is behind Vanta's document-request flow.
+- id: gdpr
+  conforms: partial
+  evidence: >-
+    Regional data compliance for EU, US and APAC is claimed on
+    https://trypencil.com/llms.txt and a privacy policy is published at
+    https://thebrandtechgroup.com/privacy-policy/ and
+    https://trypencil.com/legals/privacy-policy. No DPA or subprocessor list is
+    served anonymously.
+- id: iso-27001
+  conforms: unknown
+  evidence: >-
+    Not claimed in any anonymously readable source. The trust center's
+    certification list is JavaScript-rendered and could not be read.
+domain_standards:
+- id: openrtb
+  conforms: false
+  evidence: >-
+    Checked because the group operates programmatic and retail-media brands
+    (Mobkoi, Acorn-i, Jellyfish). No bid endpoint, OpenRTB object or
+    ads.txt/sellers.json publisher surface is exposed by the group; media
+    buying happens inside the platforms' own accounts.
+- id: iab-tech-lab-ads-txt
+  conforms: false
+  evidence: No ads.txt or sellers.json served on thebrandtechgroup.com or trypencil.com.
+note_domain_standards: >-
+  REWARD-ONLY. Marketing/creative-production has no ratified interchange
+  standard for the generative-creative surface Pencil occupies, so the absence
+  here is a description of the market, not a deficiency of the provider.

@@ -1,0 +1,57 @@
+# Pencil
+
+> Pencil is an AI operating system for marketing teams. It orchestrates multiple generative AI models into a single platform where teams generate, edit, test, and scale ad creatives — with enterprise-grade brand safety and governance built in.
+
+Pencil aggregates leading AI providers (OpenAI, Google, Adobe, Runway, Bria) into a unified interface, eliminating vendor lock-in. Marketing teams use Pencil to produce ad copy, images, product photography, and video at scale while enforcing brand guidelines, legal compliance, and data governance automatically.
+
+## What Pencil Does
+
+- Generates ad creatives across text, image, and video using multiple AI models
+- Provides a unified editor to generate, edit, and finish ads in one workspace
+- Enforces brand safety guardrails and compliance at scale through AI governance controls
+- Deploys brand-safe AI agents that automate production workflows
+- Tests creative variations before scaling spend
+- Launches and tracks ads across Meta (Facebook, Instagram), TikTok, YouTube, Google Display, DV360, and LinkedIn
+
+## Who Pencil Is For
+
+Pencil serves enterprise marketing teams, global brands, and agencies that need to produce high volumes of ad creative while maintaining brand consistency and regulatory compliance. Customers include Unilever, L'Oreal, Diageo, Samsung LATAM, Japan Airlines, William Grant & Sons, and Barilla.
+
+## Key Results
+
+- Diageo achieved a 33% cost reduction and 79% ROAS improvement
+- L'Oreal reduced costs by 33% and generated over 46,000 assets
+- Unilever scaled campaigns across 24 markets at 2x production speed
+
+## Pricing
+
+Pencil offers three plans:
+
+- **Core** — $14/month ($11/month billed annually). 50 generations per month, 1 workspace, chat support. Includes self-serve AI agents for text, image, video, and ad creatives with realtime AI insights.
+- **Growth** — $55/month ($44/month billed annually). 250 generations per month, unlimited workspaces, chat support with direct product team access. Everything in Core at a lower per-unit cost.
+- **Pro** — Custom pricing. Unlimited generations, dedicated customer success, committed consumption pricing, unlimited users/brands/markets, entity and role access controls, IP assignment, no-train clause, data ringfencing, and AI governance controls.
+
+A generation is each interaction with an AI model to produce an output. Monthly allocations do not roll over.
+
+## Trust and Security
+
+Pencil is SOC 2 Type II certified. Enterprise customers receive full IP indemnification, a no-train policy (customer data is never used to train models), regional data compliance (EU, US, APAC), and role-based access controls.
+
+## Links
+
+- [Homepage](https://trypencil.com)
+- [Pricing](https://trypencil.com/pricing)
+- [Blog](https://trypencil.com/blog)
+- [Case Studies](https://trypencil.com/case-studies)
+- [Content Hub](https://trypencil.com/content-hub)
+
+## Optional
+
+- [Pencil vs Jasper](https://trypencil.com/compare/jasper)
+- [Consumer Goods](https://trypencil.com/industry/consumer-goods)
+- [Cosmetics](https://trypencil.com/industry/cosmetics)
+- [Fashion](https://trypencil.com/industry/fashion)
+- [Finance](https://trypencil.com/industry/finance)
+- [Food and Beverage](https://trypencil.com/industry/food-beverage)
+- [Healthcare](https://trypencil.com/industry/healthcare)
+- [Technology](https://trypencil.com/industry/technology)

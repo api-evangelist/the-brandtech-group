@@ -1,0 +1,49 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  Web search plus live probes of trypencil.com, app.trypencil.com,
+  thebrandtechgroup.com and the group brand hosts
+status: none
+note: >-
+  No MCP server exists for The Brandtech Group or any of its brands. No
+  MCPServer pointer is wired into apis.yml. Search hits for "Pencil MCP" all
+  resolve to unrelated companies — Pencil Spaces (api.pencilspaces.com, online
+  tutoring), Pencil.dev / OpenPencil (design-to-code tooling) and pencil.ink —
+  none of which are The Brandtech Group's Pencil (trypencil.com). They are
+  recorded here so a later round does not mistake them for this provider.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+derivation_blocked: >-
+  A candidate tool list cannot be derived: The Brandtech Group publishes no
+  OpenAPI, GraphQL SDL or any other machine-readable contract to derive
+  operations from.
+agent_surface_found:
+- type: llms.txt
+  url: https://trypencil.com/llms.txt
+  status: 200
+  note: >-
+    The one agent-directed document the group serves. It is a marketing and
+    pricing summary with no tool, endpoint or schema content.
+name_collisions:
+- name: Pencil Spaces
+  host: api.pencilspaces.com
+  relationship: unrelated company
+- name: Pencil.dev / OpenPencil
+  host: docs.pencil.dev, openpencil.dev
+  relationship: unrelated company
+evidence:
+- url: https://trypencil.com/llms.txt
+  status: 200
+- url: https://app.trypencil.com/openapi.json
+  status: 200
+  note: SPA HTML shell, not a spec.
+- url: https://trypencil.com/openapi.json
+  status: 404
+- url: https://api.acorn-i.com/openapi.json
+  status: 403
